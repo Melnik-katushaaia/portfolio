@@ -1,0 +1,79 @@
+header {
+    background-image: url("../image/portfolio_2.0.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .header-text {
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .name-frame {
+        border: 3px solid white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-right: 20px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Стили для кнопки и списка */
+    #menu-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        border: none;
+        color: #000;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 10px;
+    }
+
+    #menu-list {
+        display: none;
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        background-color: #fff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    #menu-list li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #menu-list li a:hover {
+        background-color: #f0f0f0;
+    }
+}

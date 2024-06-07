@@ -1,0 +1,56 @@
+.cards__progress__bar {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.progress__container {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.progressbar__track {
+    fill: transparent;
+    stroke: #ededed;
+    stroke-width: 2px;
+}
+
+.progressbar__thumb {
+    fill: transparent;
+    stroke: #ff0036;
+    stroke-width: 2px;
+    transform-origin: center;
+    stroke-dasharray: 0 1;
+    transform: rotate(180deg);
+}
+
+.progressbar text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+}
+
+.progressbar text {
+    fill: #ededed;
+}
+
+.progressbar tspan {
+    fill: #ededed;
+}
+
+
+
+b {
+    color: #ededed;
+}

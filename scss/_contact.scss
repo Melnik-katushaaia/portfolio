@@ -1,0 +1,28 @@
+  .contact {
+      display: grid;
+      align-items: center;
+      background-position: center;
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 20px;
+  }
+
+  /* Стили для формы обратной связи */
+  .contact-form {
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 5px;
+      max-width: 400px;
+      margin: auto;
+
+  }
+
+  /* Стили для текста "Контакты" */
+  .contact-title {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+
+  .contact-text {
+      text-align: center;
+  }
