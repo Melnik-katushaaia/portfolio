@@ -1,0 +1,19 @@
+.footer {
+    background-color: $color-gamma;
+    /* Устанавливаем чёрный фон */
+    border-top: 1px solid $color-beta;
+    /* Устанавливаем белую границу сверху */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100px;
+
+    // .footer__copyright
+    &__copyright {
+        font-size: 14pt;
+        color: $color-alpha;
+        /* Устанавливаем белый цвет текста */
+        background-color: $color-beta;
+        /* Устанавливаем чёрный фон для copyright */
+    }
+}

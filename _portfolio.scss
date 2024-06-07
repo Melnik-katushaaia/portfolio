@@ -1,0 +1,108 @@
+.portfolio {
+    padding: 50px 0;
+    color: $color-beta;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $color-beta;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .portfolio-button {
+        background-color: $color-beta;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: background-color 0.3s ease;
+
+        &.active {
+            background-color: $color-beta;
+        }
+
+        &:hover {
+            background-color: $color-cuer;
+        }
+    }
+}
+
+.portfolio-grid {
+    display: grid;
+    /* Используем grid для создания сетки */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки */
+    gap: 20px;
+    /* Отступ между элементами */
+    justify-content: space-between;
+    /* Равномерно распределяем элементы */
+}
+
+.portfolio-item {
+    width: 100%; // Теперь элементы будут занимать всю ширину колонки
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        /* Картинка будет занимать всю ширину элемента */
+        height: auto;
+        /* Высота картинки будет подстраиваться автоматически */
+        display: block;
+        /* Убираем лишний отступ снизу */
+    }
+}
+
+.portfolio__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__item {
+    display: none;
+    /* Скрываем все элементы по умолчанию */
+}
+
+.portfolio__item.active {
+    display: block;
+}
+
+.portfolio-button {
+
+    /* ... (остальной CSS) */
+    &:not(.active):hover {
+        background-color: $color-cuer;
+    }
+}
+
+/* Стили для элементов, которые должны отображаться при нажатии кнопки */
+.klyuch {
+    display: block;
+}
+
+.verstka {
+    display: block;
+}
+
+.prochee {
+    display: block;
+}
+
+/* Стили для элемента, который должен отображаться при нажатии "ВСЕ РАБОТЫ" */
+.all {
+    display: block;
+}

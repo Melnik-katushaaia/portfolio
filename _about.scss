@@ -1,0 +1,80 @@
+.about {
+    padding: 50px 0;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #000;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        /* Добавляем анимацию для всего grid */
+        animation: fadeIn 0.5s ease-in-out forwards;
+
+        .about-item {
+            text-align: center;
+            /* Добавляем анимацию для каждого item */
+            animation: fadeIn 0.5s ease-in-out forwards;
+
+            .about__image img:hover {
+                transition: transform 1s;
+                transform: rotateY(0deg);
+                transform: rotateY(360deg);
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+
+            img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                /* Добавляем анимацию для img */
+                animation: fadeIn 0.5s ease-in-out forwards;
+            }
+
+            p {
+                line-height: 1.6;
+                font-size: 1.1rem;
+                font-style: italic;
+                /* Добавляем анимацию для p */
+                animation: fadeIn 0.5s ease-in-out forwards;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}

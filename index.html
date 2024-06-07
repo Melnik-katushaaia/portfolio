@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/function.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container" id="home">
+      <div class="header-text">
+        <h1>Сайт-портфолио веб-разработчика</h1>
+      </div>
+      <div class="name-frame">
+        <h2>Мельник Екатерина</h2>
+        <p>Web-разработчик / HTML-верстальщик / Javascript / Графический дизайн / SMM</p>
+      </div>
+      <!-- Добавляем кнопку -->
+      <!-- Кнопка меню -->
+      <a id="menu-button">☰</a>
+
+      <!-- Скрытый список -->
+      <ul id="menu-list">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#skills">Профессиональные навыки</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+</body>
+<!-- Основное содержимое -->
+<main class="main">
+
+  <!-- Блок Обо мне -->
+  <section class="main__about about" id="about">
+    <div class="about__container">
+      <!-- Название компании -->
+      <h2 class="section-title">Обо мне</h2>
+      <div class="about-grid">
+        <div class="about-item">
+          <img src="image/me1.jpg" alt="Немного о себе">
+          <p>
+            Доброго времени суток, меня зовут Мельник Екатерина.
+            Я занимаюсь web-разработкой с нуля, под ключ.
+            Выполняю верстку и программирование сайтов, а так же доработку, добавляя полный функционал на сайт!
+          </p>
+        </div>
+        <div class="about-item">
+          <img src="image/me2.jpg" alt="Знания и Умения">
+          <p>
+            Знаю такие языки программирования, как: JavaScript. Языки разметки: HTML, таблицы стилей CSS.
+            Умею верстать адаптивные сайты под планшеты и мобильные устройства.
+          </p>
+        </div>
+        <div class="about-item">
+          <img src="image/me3.jpg" alt="Самообразование">
+          <p>
+            Курсы в интернете, видеокурсы, форумы, фестивали.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок Профессиональные навыки -->
+  <section class="main__skills skills" id="skills">
+    <div class="skills__container">
+      <div class="container">
+        <h2 class="section-title">Профессиональные навыки</h2>
+        <div class="cards__progress__bar">
+
+          <div class="progress__container">
+            <div class="progress__name"><b>SMM</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="100" cx="50%" cy="50%" r="30"></circle>
+              <text x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+          <div class="progress__container">
+            <div class="progress__name"><b>Photoshop</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="90" cx="50%" cy="50%" r="30"></circle>
+              <text x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+          <div class="progress__container">
+            <div class="progress__name"><b>HTML5|CSS3</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="80" cx="50%" cy="50%" r="30"></circle>
+              <text x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+          <div class="progress__container">
+            <div class="progress__name"><b>JavaScript</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="70" cx="50%" cy="50%" r="30"></circle>
+              <text x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+        </div>
+        <!-- .cards__progress__bar -->
+  </section>
+
+  <!-- Блок  коммуникативные навыки -->
+  <section class="main__communication communication" id="communication">
+    <div class="communication__container">
+      <div class="container">
+        <h2 class="section-title">Коммуникативные навыки</h2>
+        <div class="cards__progress__bar">
+
+          <div class="progress__container">
+            <div class="progress__name"><b> Коммуникабельность</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="100" cx="50%" cy="50%" r="30"></circle>
+              <text class="progress-text" x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+          <div class="progress__container">
+            <div class="progress__name"><b> Внимательность</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="90" cx="50%" cy="50%" r="30"></circle>
+              <text class="progress-text" x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+          <div class="progress__container">
+            <div class="progress__name"><b>Креативность</b></div>
+            <svg class="progressbar" viewbox="0 0 64 64">
+              <circle class="progressbar__track" cx="50%" cy="50%" r="30"></circle>
+              <circle class="progressbar__thumb" data-circle="80" cx="50%" cy="50%" r="30"></circle>
+              <text class="progress-text" x=32 y=33 text-anchor=middle dominant-baseline=middle></text>
+            </svg>
+          </div>
+          <!-- .progress__container -->
+
+        </div>
+        <!-- .cards__progress__bar -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Блок Портфолио -->
+  <section class="main__portfolio portfolio" id="portfolio">
+    <!-- Заголовок блока -->
+    <h2 class="section-title">Портфолио</h2>
+    <!-- Фильтр -->
+    <div class="portfolio-buttons">
+      <a class="portfolio-button active" data-filter="all">ВСЕ РАБОТЫ</a>
+      <a class="portfolio-button" data-filter="klyuch">ПОД КЛЮЧ</a>
+      <a class="portfolio-button" data-filter="verstka">ВЕРСТКА</a>
+      <a class="portfolio-button" data-filter="prochee">ПРОЧЕЕ</a>
+    </div>
+    <!-- Здесь будет ваш код для отображения работ -->
+    <div class="portfolio__items">
+      <div class="portfolio__item all klyuch" id="klyuch">
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="image/image1.png" alt="Описание картинки">
+          </div>
+          <div class="portfolio-item">
+            <img src="image/image2.png" alt="Описание картинки">
+          </div>
+          <div class="portfolio-item">
+            <img src="image/image3.png" alt="Описание картинки">
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__item all verstka" id="verstka">
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="image/image4.png" alt="Описание картинки">
+          </div>
+          <div class="portfolio-item">
+            <img src="image/image5.png" alt="Описание картинки">
+          </div>
+          <div class="portfolio-item">
+            <img src="image/image6.png" alt="Описание картинки">
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__item all prochee" id="prochee">
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="image/image7.png" alt="Описание картинки">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Блок Контакты -->
+  <section class="main__contact contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+    </div>
+    <div class="contact-text">
+      <hr>
+      <h4>Если у вас есть вопросы, я с радостью отвечу на них!<br>
+        Для этого свяжитесь со мной удобным для вас способом и я отвечу Вам в ближайшее время!</h4>
+    </div>
+
+    <div class="social-networks">
+      <a href="#" class="social-link">
+        <img src="image/logo/logo-vk.png" alt="ВКонтакте" class="social-icon">
+        <span>ВКонтакте</span>
+      </a>
+      <a href="#" class="social-link">
+        <img src="image/logo/logo-telegram.png" alt="Telegram" class="social-icon">
+        <span>Telegram</span>
+      </a>
+      <a href="#" class="social-link">
+        <img src="image/logo/logo-yandex.png" alt="Яндекс Почта" class="social-icon">
+        <span>Яндекс Почта</span>
+      </a>
+    </div>
+
+    <div class="contact__form" id="form">
+      <form action="contact.php" method="post" class="contact-form">
+        <!-- Поля формы -->
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required class="input-field" placeholder="Ваше имя...">
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required class="input-field"
+          placeholder="Ваша электронная почта...">
+
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="5" required class="message-field"
+          placeholder="Ваше сообщение..."></textarea>
+
+        <!-- Кнопка отправки -->
+        <button type="submit" class="submit-btn">Задать вопрос</button>
+      </form>
+    </div>
+  </section>
+</main>
+<!-- Подвал (grid-элемент + grid-контейнер) -->
+<footer class="footer">
+  <div class="footer__copy">&copy; portfolio, 2024</div>
+</footer>
+
+</body>
+
+</html>

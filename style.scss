@@ -1,0 +1,124 @@
+@import '_colors.scss';
+@import '_mixin.scss';
+@import '_header.scss';
+@import '_main.scss';
+@import '_about.scss';
+@import '_skills.scss';
+@import '_communication.scss';
+@import '_portfolio.scss';
+@import '_footer.scss';
+@import '_progress.scss';
+@import '_contact.scss';
+@import '_contact-form.scss';
+@import '_social.scss';
+
+*,
+*:before,
+*:after {
+    padding: 7px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+// Базовый шрифт и цвет текста
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: $color-beta;
+    font-size: 18px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: $color-gamma;
+    background-color: $color-beta;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+
+    &:hover {
+        background-color: $color-alpha;
+        text-decoration: none;
+    }
+}
+
+.anime {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.hide {
+    display: none;
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    0% {
+        visibility: visible;
+        height: 200px;
+    }
+
+    100% {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        max-width: 0;
+        font-size: 0;
+        margin: 0;
+    }
+}
+
+
+a {
+    color: $color-beta;
+    /* Цвет ссылок */
+    text-decoration: none;
+    /* Убираем подчёркивание */
+    border-bottom: 0 solid $color-gamma;
+    /* Параметры линии снизу */
+    transition: 0.2s;
+    /* Время перехода */
+}
+
+a:hover {
+    color: $color-gamma;
+    /* Цвет ссылок при наведении */
+    border-bottom-width: 3px;
+    /* Толщина линии снизу */
+}
+
+.about {
+
+    &__contact img {
+        width: 24px;
+        height: 24px;
+    }
+
+    таблица стилей агента пользователя img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    &__contact {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,16 @@
+.social-networks {
+    display: grid; // Используем CSS Grid для выравнивания элементов
+    grid-template-columns: repeat(2, 1fr); // Задаем две колонки, каждая с шириной 1fr
+    justify-content: end; // Выравниваем элементы по правому краю
+    align-items: center; // Выравниваем элементы по вертикали по центру
+    margin-top: 20px; // Добавляем отступ сверху
+}
+
+.social-link {
+    margin-right: 10px; // Добавляем отступ справа между ссылками
+}
+
+.social-icon {
+    width: 30px; // Задаем ширину логотипа
+    height: 30px; // Задаем высоту логотипа
+}
